@@ -1,0 +1,13 @@
+class base {
+public:
+int j; // public in base
+};
+// Inherit base as private.
+class derived: private base {
+public:
+// here is access declaration
+base::j; // make j public again
+.
+.
+.
+};
